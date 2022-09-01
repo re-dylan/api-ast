@@ -22,7 +22,7 @@ func (s *Scanner) scanIdentifier() string {
 	offs := s.offset
 
 	for rdOffset, b := range s.src[s.rdOffset:] {
-		if 'a' <= b && b <= 'z' || 'A' <= b && 'Z' <= b || b == '_' || '0' <= b && b <= '9' {
+		if 'a' <= b && b <= 'z' || 'A' <= b && b <= 'Z' || b == '_' || '0' <= b && b <= '9' {
 			continue
 		}
 
